@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://scenes/inventory/inventory.gd"
+}, {
+"base": "Panel",
+"class": "Slot",
+"language": "GDScript",
+"path": "res://scenes/slot/slot.gd"
+} ]
+_global_script_class_icons={
+"Inventory": "",
+"Slot": ""
+}
+
+[application]
+
+config/name="Flexible Inventory"
+run/main_scene="res://scenes/flexible-inventory.tscn"
+
+[debug]
+
+gdscript/warnings/unused_signal=false
+gdscript/warnings/return_value_discarded=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
